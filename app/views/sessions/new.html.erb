@@ -1,0 +1,7 @@
+<h1>Please Log In:</h1><br>
+
+<%= form_tag('/login') do %>
+  <div><%= text_field_tag :name, '', :placeholder => 'Name' %></div>
+  <div><%= text_field_tag :password, '', :placeholder => 'Password'  %></div><br>
+  <div><%= submit_tag 'Log In' %></div>
+<% end %>
